@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Credit Card Workout</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="#"><img alt="Credit Card Workout" src="img/logo-company.png"></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#calculator">How It Works</a></li>
+            <li><a href="#calculator">Calculate</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR-END -->
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a odio justo. Nam condimentum justo felis, eget posuere lectus vulputate eget. Vivamus facilisis hendrerit dui. Ut vel purus ac turpis tincidunt vulputate et vel massa. Praesent semper est non maximus tristique.</p>
+
+            <p>Fusce sit amet finibus est, non semper massa. Suspendisse suscipit aliquet rutrum. Nunc fringilla blandit eros, eu porttitor nulla dignissim eget. Nunc hendrerit augue elit, at tempus nunc euismod in. Vivamus gravida turpis scelerisque ante pretium tempor.</p>
+
+            <ul class="list-inline">
+              <li><a href="#calculator" class="btn btn-primary btn-md">Calculate Your Debt</a></li>
+              <li><a href="#team" class="btn btn-primary btn-md">Our Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" align="center">
+            <img class="img-responsive" src="img/card.png"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER-END -->
+
+
+    <!-- HOW IT WORKS -->
+
+    <!-- HOW IT WORKS-END -->
+
+    <!-- CALCULATOR -->
+
+    <div class="calculator" id="calculator">
+    	<div class="container">
+
+	        <div class="row">
+	          <div class="col-lg-12 col-md-12">
+	            <h1>HOW IT WORKS</h1>
+	            <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a odio justo. Nam condimentum justo felis, eget posuere lectus vulputate eget. Vivamus facilisis hendrerit dui. Ut vel purus ac turpis tincidunt vulputate et vel massa. Praesent semper est non maximus tristique.</em></p>
+	          </div>
+	        </div>
+
+    		<div class="row">
+    			<div class="col-lg-12 col-md-12">
+    				<h1>CALCULATE YOUR DEBT</h1>
+    			</div>
+    		</div>
+
+    		<div class="row">
+
+    			<div class="col-lg-6 col-md-6">
+
+    				<h2>INPUT</h2>
+            <form>
+    				<label for="balance-owed">Balance owed:</label>
+    				<div class="input-group">
+					  <span class="input-group-addon">£</span>
+					  <input type="text" class="form-control" id="balance-owed" placeholder="0.00" aria-label="Amount">
+					</div>
+
+					<label for="interest-rate">Interest rate (annual):</label>
+					<div class="input-group">
+					  <input type="text" class="form-control" id="interest-rate" placeholder="APR" aria-label="Rate (%)">
+					  <span class="input-group-addon">%</span>
+					</div>
+
+    				<label for="monthly-pay">Amount you wish to pay off each month:</label>
+    				<div class="input-group">
+					  <span class="input-group-addon">£</span>
+					  <input type="text" class="form-control" id="monthly-pay" placeholder="0.00" aria-label="Amount">
+					</div>
+
+					<!-- <input type="submit" class="btn btn-primary btn-md">Calculate</input> -->
+          <button type='button' onclick="callScript()"></button>
+        </form>
+
+    			</div>
+
+    			<div class="col-lg-6 col-md-6">
+    				
+    				<h2>RESULT</h2>
+            <p id="results"></p>
+
+    			</div>
+
+    		</div>
+    	</div>
+    </div>
+
+    <!-- CALCULATOR -->
+
+    <!-- TEAM -->
+
+    <div class="about" id="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h1>WHO WE ARE</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          
+          <div class="col-lg-6 col-md-6">
+            <img src="img/alice.jpg" class="img-circle">
+            <blockquote>
+              <p><em>"Developer. Art and Drama enthusiast. Totally the best Tracer player in Europe."<footer>Alice Hinton-Jones - Front-End Developer/Designer.</footer></em></p>
+            </blockquote>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <img src="img/akash.jpg" class="img-circle">
+            <blockquote>
+              <p><em>"Sir Debugs-a-lot. Programmer. Foodie and Explorer."<footer>Akash Goswami - Programmer.</footer></em></p>
+            </blockquote>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TEAM-END -->
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+    	<div class="container">
+    		<div class="row">
+
+    			<div class="col-lg-6 col-md-6">
+    				<h1>CREDIT CARD WORKOUT</h1>
+    				<p>&copy; Alice & Akash - Since 2017</p>
+    				<p><em>Disclaimer: The calculations provided on this website may not be 100% accurate. This tool should only be used to give you a rough idea of what you need to pay back.</em></p>
+    			</div>
+
+    			<div class="col-lg-6 col-md-6 footer-right">
+    				<h1>GET IN TOUCH:</h1>
+    				<p><a href="mailto:alice.hinton.jones@gmail.com">alice.hinton.jones@gmail.com</a></p>
+    			</div>
+
+    		</div>
+    	</div>
+    </div>
+
+
+    <!-- FOOTER-END -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ccw.js"></script>
+
+    <script>
+      function callScript(){
+        var balance = document.getElementById("balance-owed").value
+        var interestRate = document.getElementById("interest-rate").value
+        var monthlyPay = document.getElementById("monthly-pay").value
+        var monthlyRate = Math.pow(interestRate, 1/12);
+        monthlyRate = monthlyRate / 100;
+        //console.log(monthlyRate);
+        monthlyRate = Math.round(monthlyRate * 10000) / 10000;
+        var str = "";
+        var res = fixedMonthlyAmountToPayFixed(balance,monthlyRate,str);
+        console.log(res);
+        var p = document.getElementById('results');
+        p.innerHTML = res;
+      }
+    </script>
+  </body>
+</html>
