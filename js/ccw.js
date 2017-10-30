@@ -75,9 +75,9 @@ monthlyRate = Math.round(monthlyRate * 10000) / 10000;
 // };
 
 function callScript(){
-        var balance = document.getElementById("balance-owed").value
-        var interestRate = document.getElementById("interest-rate").value
-        var monthlyPay = document.getElementById("monthly-pay").value
+        var balance = document.getElementById("balance-owed").value;
+        var interestRate = document.getElementById("interest-rate").value;
+        var monthlyPay = document.getElementById("monthly-pay").value;
         var monthlyRate = Math.pow(interestRate, 1/12);
         monthlyRate = monthlyRate / 100;
         //console.log(monthlyRate);
@@ -87,4 +87,4 @@ function callScript(){
         console.log(res);
         var p = document.getElementById('results');
         p.innerHTML = res;
-}
+};
