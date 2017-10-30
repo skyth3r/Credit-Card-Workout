@@ -6,8 +6,7 @@ Website that takes a users credit card balance, interest rate and monthly amount
 
 ## Made by
 [Akash Goswami](https://twitter.com/Skyther_)
-
-[Alice Hinton-Jones] (https://github.com/Lasirena)
+[Alice Hinton-Jones](https://github.com/Lasirena)
 
 ## Built with:
 [Bootstrap](https://getbootstrap.com)
