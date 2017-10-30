@@ -73,3 +73,18 @@ monthlyRate = Math.round(monthlyRate * 10000) / 10000;
 //     // For fexiable monthlyRate amount to pay
 //     fixedMonths()
 // };
+
+function callScript(){
+        var balance = document.getElementById("balance-owed").value
+        var interestRate = document.getElementById("interest-rate").value
+        var monthlyPay = document.getElementById("monthly-pay").value
+        var monthlyRate = Math.pow(interestRate, 1/12);
+        monthlyRate = monthlyRate / 100;
+        //console.log(monthlyRate);
+        monthlyRate = Math.round(monthlyRate * 10000) / 10000;
+        var str = "";
+        var res = fixedMonthlyAmountToPayFixed(balance,monthlyRate,str);
+        console.log(res);
+        var p = document.getElementById('results');
+        p.innerHTML = res;
+}
