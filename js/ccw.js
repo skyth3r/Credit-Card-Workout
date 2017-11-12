@@ -19,6 +19,9 @@ function fixedMonthlyAmountToPayFixed(balance, monthlyRate, string) {
         string += 'To pay off your debt, it will take you ' + monthCounter + ' months.\n';
         //string += '=================================================\n';
         return string;
+        // reset variables
+        balance = 0;
+        monthlyRate = 0;
     };
 };
 
